@@ -331,6 +331,7 @@
   .order__foot { grid-column: 1 / -1; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
   .order__ok { grid-column: 1 / -1; color: var(--v-accent); font-weight: 600; }
   .order__ok small { display: block; color: var(--v-ink-soft); font-weight: 400; margin-top: 4px; }
+  .cb, .cb-box { --v-accent: #0b6e99; --accent-rgb: 11 110 153; --v-ink-soft: #52636d; --v-font-display: "Onest", sans-serif; --v-e2: 0 22px 54px rgb(20 34 43 / .18); }
   .cb { position: fixed; right: 18px; bottom: 18px; z-index: 50; width: 58px; height: 58px; border-radius: 50%; border: 0; background: var(--v-accent); color: #fff; cursor: pointer; box-shadow: 0 8px 24px rgb(var(--accent-rgb) / .4); display: grid; place-items: center; }
   .cb::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid rgb(var(--accent-rgb) / .5); animation: cbp 1.8s ease-out infinite; }
   @keyframes cbp { from { transform: scale(.9); opacity: 1; } to { transform: scale(1.35); opacity: 0; } }
