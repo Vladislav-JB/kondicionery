@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230b6e99%27/%3E%3Cpath d=%27M16 6v20M7.3 11l17.4 10M7.3 21l17.4-10%27 stroke=%27%23fff%27 stroke-width=%272.2%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HVACBusiness","name":"Норд","description":"Монтаж и обслуживание кондиционеров под ключ за 1 день.","url":"https://vladislav-jb.github.io/kondicionery","image":"https://vladislav-jb.github.io/kondicionery/assets/og.jpg","telephone":"+7 (900) 000-00-00","openingHours":"Mo-Su 08:00-21:00","priceRange":"от 2 500 ₽"}
@@ -342,6 +343,15 @@
   .cb-box input { font: inherit; border: 1px solid #d3dde2; border-radius: 8px; padding: 11px 12px; }
   .cb-box p { font-size: .85rem; color: var(--v-ink-soft); margin: 0; }
   @media (max-width: 640px) { .order { grid-template-columns: 1fr; } }
+
+  /* подпись разработчика: «Создан в «Веб-Ателье»» */
+  .foot__made { display: inline-block; white-space: nowrap; font-style: italic; font-size: var(--v-t-sm); line-height: 1.4; color: var(--v-ink-soft); padding: .4em 0; }
+  .foot__made a { display: inline; margin: 0 0 0 .3em; color: inherit; text-decoration: none; font-family: Calibri, "Carlito", sans-serif; font-weight: 700; font-style: italic; font-size: 1.12em; }
+  .foot__made a:hover { color: var(--v-ink); text-decoration: underline; text-underline-offset: .18em; }
+  .foot__made img { display: inline-block; width: 40px; height: 52px; max-width: none; margin-left: .35em; vertical-align: -7px; }
+  .foot { align-items: center; }
+  @media (max-width: 860px) { .foot__made { font-size: 1rem; } }
+  .foot { padding-bottom: 76px; } /* не прятать подпись под круглой кнопкой звонка в углу */
 </style>
 </head>
 <body>
@@ -604,7 +614,8 @@
         <footer class="foot">
           <span>Климатическая компания «Норд»</span>
           <span>ООО «Норд» · ИНН 7700000011</span>
-          <span class="foot__more">Фото: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a> · демо-сайт, данные условные</span>
+          <span class="foot__more">Демо-сайт, данные условные</span>
+          <span class="foot__made">Создан в <a href="http://web-atelie.ru/" target="_blank" rel="noopener">«Веб-Ателье»</a><img src="assets/web-atelie.png" alt="" width="40" height="52" loading="lazy" decoding="async"></span>
         </footer>
       </div>
     </section>
